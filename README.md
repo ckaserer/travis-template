@@ -2,6 +2,10 @@
 ![GitHub](https://img.shields.io/github/license/ckaserer/travis-template)
 ![Maintenance](https://img.shields.io/maintenance/yes/2020)
 
+<p align="center">
+<img alt="logo" width=250px src="https://travis-ci.com/images/logos/TravisCI-Full-Color.png">
+</p>
+
 # travis-template
 
 A github repository template to create new repos with travis notifications. Slack notifications are enabled on failure / Mail notifications are disabled.
