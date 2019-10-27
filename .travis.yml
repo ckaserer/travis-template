@@ -1,0 +1,19 @@
+language: bash
+os: linux
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+  slack:
+    rooms:
+      secure: gsiI3V9oM/ORGuqRM+Nqy4CQ/OHhhSoJ22o6RQF7ylUgma1b1vcJMV49TU/U8ar7ROuQVp7FVmRWNwW+mKB4jmIAqTokV7k8JkI7mFi2eCWA4LxRIFFsFDNi8dP/Q6KJ81ixe1B7FEE1yvTv6i83qmqA0Yno0yjmafU0dS1fuc6m5fY9xkYQKQn+IEDyTkSR4wo0rurVQKVPeUR+vVxB8KVswOtSfhhkm/J5V8EGYgADx7+37U7Ds36eFUy0pSfQ9QwHQQ5kBrZ0pJolikwsRcvcl13i14xXpsEi2N+0PTnOa0P0LQctDib6cOjZw1jlOlbAdXwnGcvO7t7SXUDd/RbOnzzRaSgp2w5Hn7VD4QNCs5vdsTakTt97d5EhSefzisNqwHpidoNXrZjPvIybAbFHRL2tvhyRUBcYfRf0GI+qQoArueAGG+FM836kIrkC5Zo09Z2sLry5sp+wlvidVJQR8rykuN8G7Cw2I9IG1c+04hNBZlG52w7FOyQM2BoriNZDSnQDTEZ99e+IGtuNYmXUeqee164Rr06pSXL3mNfG4XvJ4E28/y9+fMhn3FvIOow0iyxRgP4T0XS/kliWLXtZo7Kz37+H34FXn1z1Kd9CoKmQvEaGKqkKyv1QQtpaOtiZorL9hFJwUsnrgpNt9tPtlneugOgniewDz20Dx7o=
+    template:
+      - "%{commit_subject}"
+      - "build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) @%{branch}"
+      - "by %{author} %{result} in %{duration}"
+    on_success: never
+    on_failure: always
+
+script:
+- touch helloworld
