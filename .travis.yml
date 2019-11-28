@@ -16,4 +16,4 @@ notifications:
     on_failure: always
 
 script:
-- touch helloworld
+- travis_terminate 1
