@@ -13,3 +13,4 @@ A github repository template to create new repos with travis notifications. Slac
 ## First Steps
 
 1) replace each occurance of travis-template in the badge definition with the new repository name.
+2) Update your secure slack token. The travis encryption is repo based and won't work for another repo.
