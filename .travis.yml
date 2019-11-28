@@ -1,5 +1,9 @@
-language: bash
+---
+version: "~> 1.0"
+
 os: linux
+
+language: shell
 
 notifications:
   email:
